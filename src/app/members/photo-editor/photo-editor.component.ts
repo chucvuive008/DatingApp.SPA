@@ -15,6 +15,7 @@ import * as _ from 'underscore';
 export class PhotoEditorComponent implements OnInit {
   @Input() photos: Photo[];
   uploader: FileUploader;
+  // it is true mean there is a photo drop to the box
   hasBaseDropZoneOver = false;
   baseUrl = environment.apiUrl;
   currentMain: Photo;
